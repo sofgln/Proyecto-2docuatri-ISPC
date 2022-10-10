@@ -4,6 +4,8 @@
     --secondary: #DF6B2B;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
+
 
 /* reset */
 * {
@@ -12,15 +14,8 @@
     box-sizing: border-box;
 }
 
-ul a {
-    color: rgba(255, 255, 255, .8);
-
-    font-weight: 200;
-    text-decoration: none;
-}
-
-ul {
-    list-style: none;
+body {
+    font-family: 'Inter', sans-serif;
 }
 
 
@@ -66,6 +61,17 @@ nav div.toggle-list img {
 
 
 /* menu list */
+ul.menu-list a, ul.paises a {
+    color: rgba(255, 255, 255, .8);
+
+    font-weight: 200;
+    text-decoration: none;
+}
+
+ul.menu-list, ul.paises {
+    list-style: none;
+}
+
 div.toggle-list {
     width: auto;
     height: auto;
