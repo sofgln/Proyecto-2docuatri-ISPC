@@ -121,7 +121,7 @@
   - [Cristian](https://github.com/Cristian-Sosa)
 
 
-  Y a nuestro instituto, [ISPC](https://www.ispc.edu.ar/), donde estamos cursando la Tecnicatura Superior en Desarrollo Web y Aplicaciones Digitales
+  Y a nuestro instituto, [ISPC](https://www.ispc.edu.ar/), donde estamos cursando la Tecnicatura Superior en Desarrollo Web y Aplicaciones Digitales.
   
 </section>
 
