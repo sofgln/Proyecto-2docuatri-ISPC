@@ -1,13 +1,13 @@
-/* variables */
+/* imports y variables */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&display=swap');
+
 :root {
     --primary: #253E5D;
     --secondary: #DF6B2B;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
 
-
-/* reset */
+/* reset y configuración general*/
 * {
     margin: 0;
     padding: 0;
@@ -15,11 +15,15 @@
 }
 
 body {
+    width: 100vw;
+
     font-family: 'Inter', sans-serif;
+
+    overflow-x: hidden;
 }
 
 
-/* seccion del header */
+/* estilos del banner */
 header {
     width: 100vw;
     height: 100vh;
@@ -28,28 +32,93 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+header div.banner-text {
+    padding: 0 24px;
+}
+
+header div.banner-text div {
+    width: 100%;
+    height: 180px;
+}
+
+header div.banner-text a.banner-text-cta {
+    padding: 16px 32px;
+
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--secondary);
+
+    background-color: transparent;
+
+    border: 1px solid var(--secondary);
+    border-radius: 50px;
+
+    transition: background-color 0.5s 0s ease-out, color 0.5s 0s ease-out;
+}
+
+header div.banner-text a.banner-text-cta:hover {
+    color: #F1F4F9;
+
+    background-color: var(--secondary);
+}
+
+header span.banner-cta {
+    padding: 16px 0;
+
+    font-weight: 200;
+    color: #F1F4F9;
+
+    align-self: center;
+
+    opacity: .8;
+}
+
+header span.banner-cta img {
+    width: 14px;
 }
 
 
+/* estilos del texto animado del banner */
+header div.banner-text div h1 {
+    font-weight: 200;
+    color: #FBF9ED;
+}
 
-/* seccion del navbar */
+header div.banner-text div span {
+    font-weight: 400;
+    color: var(--secondary);
+}
+
+
+/* estilos de la barra de navageción */
 nav.navbar {
     width: 100%;
     height: 80px;
 
     padding: 16px 24px;
 
-    color: #fff;
+    color: #F1F4F9;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+    overflow: hidden;
 }
 
 nav span {
     font-size: 24px;
-    font-weight: 200;
+    font-weight: 400;
+
+    color: #FBF9ED
 }
 
 nav div.toggle-list img {
@@ -60,45 +129,47 @@ nav div.toggle-list img {
 }
 
 
-/* menu list */
-ul.menu-list a, ul.paises a {
-    color: rgba(255, 255, 255, .8);
+/* estilos generales de menu general y de paises */
+ul.menu-list, li.paises ul {
+    width: 100%;
 
-    font-weight: 200;
-    text-decoration: none;
-}
-
-ul.menu-list, ul.paises {
     list-style: none;
+
+    z-index: 2;
 }
 
-div.toggle-list {
-    width: auto;
-    height: auto;
+
+/* estilos generales de elementos 'li' de menu general y menu paises */
+ul.menu-list li, li.paises ul li {
+    width: 100%;
+
+    padding: 24px 16px;
 }
 
+ul.menu-list li a, li.paises ul li a {
+    width: 100%;
+
+    padding: 16px 0;
+
+    font-size: 16px;
+    font-weight: 200;
+    text-align: left;
+    text-decoration: none;
+    
+    color: #F1F4F9;
+
+    display: inline-block;
+}
+
+
+/* estilos de menu general */
 ul.menu-list {
-    display: none;
-
-    right: 100%;
-}
-
-ul.paises {
-    display: none;
-}
-
-ul.paises.toggle {
-    padding: 24px 0;
-}
-
-
-ul.menu-list.toggle {
     width: 100%;
     height: auto;
 
     padding: 24px 16px;
 
-    background-color: rgba(61, 61, 61, .75);
+    background-color: rgba(25, 25, 25, .95);
 
     display: flex;
     flex-direction: column;
@@ -106,32 +177,37 @@ ul.menu-list.toggle {
     align-items: center;
 
     position: absolute;
-    
+
     top: 80px;
-    left: 0;
+    left: 100%;
+
+    transition: left .5s 0s ease-out;
 }
 
-
-ul.menu-list.toggle, ul.paises {
+ul.menu-list.toggle {
     width: 100%;
 
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+
+    left: 0;
 }
 
-ul.menu-list li, ul.paises li {
-    padding: 24px 16px
+
+/* estilos de menu paises */
+li.paises {
+    display: none;
 }
 
-ul.menu-list li a, ul.paises li a {
-    width: 100%;
-    
-    padding: 16px 0;
+li.paises.toggle {
+    display: block;
+}
 
-    font-size: 16px;
-    font-weight: 200;
-
-    text-align: center;
+li.paises.toggle ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
