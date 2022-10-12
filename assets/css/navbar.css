@@ -1,0 +1,162 @@
+nav.navbar {
+  width: 100%;
+  height: 80px;
+
+  padding: 0 24px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+.navbar_title {
+  font-size: 2.4rem;
+  font-weight: 400;
+
+  user-select: none;
+}
+
+/* main menu toggle */
+.menu_button img {
+  width: 2.6rem;
+  height: 2.6rem;
+
+  user-select: none;
+  cursor: pointer;
+}
+
+input#menu_toggle,
+input#list_toggle {
+  display: none;
+}
+
+/* function main menu toggle */
+#menu_toggle:checked ~ .menu_list {
+  left: 0;
+}
+
+/* styles main menu */
+.menu_list {
+  width: 100vw;
+  height: auto;
+
+  background-color: rgba(25, 25, 25, 0.95);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  position: absolute;
+  top: 80px;
+  left: 100%;
+
+  z-index: 10;
+
+  transition: left 0.3s 0s ease-out;
+}
+
+.list_link {
+  width: 100%;
+
+  padding: 1.6rem 3.2rem;
+
+  font-size: 1.6rem;
+  font-weight: 200;
+  text-align: left;
+  text-decoration: none;
+  color: #f1f4f9;
+
+  display: inline-block;
+
+  transition: background-color 0.3s 0s ease-out;
+
+  user-select: none;
+  cursor: pointer;
+}
+
+.list_link:hover {
+  background-color: rgba(23, 23, 23, 0.4);
+}
+
+.list_link img {
+  width: 1.2rem;
+
+  margin-bottom: -0.2rem;
+}
+
+/* function list menu */
+.list_menu {
+  width: 100%;
+
+  background-color: rgba(55, 55, 55, .75);
+
+  position: absolute;
+  left: 100%;
+}
+
+.list_menu .list_link {
+  padding: 2.2rem 6.4rem;
+}
+
+/* function list menu toggle */
+#list_toggle:checked ~ .list_menu {
+  position: relative;
+  left: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .menu_button img {
+    display: none;
+  }
+
+  .menu_list {
+    width: auto;
+    height: auto;
+
+    background-color: transparent;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    position: initial;
+  }
+
+  .list_link {
+    width: fit-content;
+
+    padding: 1.6rem 3.2rem;
+  }
+
+  /* function list menu */
+  .list_menu {
+    width: auto;    
+
+    position: absolute;
+    top: 80px;
+    left: 100%;
+  }
+
+  .list_menu .list_link {
+    width: 100%;
+
+    padding: 2.2rem 6.4rem;
+
+    text-align: center;
+  }
+
+  /* function list menu toggle */
+  #list_toggle:checked ~ .list_menu {
+    width: auto;
+
+    position: absolute;
+    top: 80px;
+    right: 0;
+    left: auto;
+  }
+}
