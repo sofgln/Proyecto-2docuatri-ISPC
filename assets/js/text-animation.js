@@ -1,21 +1,3 @@
-// función show menu general
-
-const navbarToggle = document.querySelector('#navbar-toggle');
-const navbarMenu = document.querySelector('#menu-list');
-
-navbarToggle.addEventListener('click', () => {
-    navbarMenu.classList.toggle('toggle');
-    navbarMenuPaises.classList.remove('toggle');
-})
-
-
-// función show menu paises
-const navbarLinkPaises = document.querySelector('#paises');
-const navbarMenuPaises = document.querySelector('#list-paises');
-
-navbarLinkPaises.addEventListener('click', () => navbarMenuPaises.classList.toggle('toggle'))
-
-
 // función animación del texto banner
 var TxtRotate = function(el, toRotate, period) {
     this.toRotate = toRotate;

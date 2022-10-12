@@ -18,57 +18,70 @@
       name="description"
       content="Proyecto del segundo cuatrimestre de cursada del 2022 en el ISPC modulo Programador FullStack"
     />
-    <link rel="stylesheet" type="text/css" href="./assets/css/index.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="./assets/css/index.css" /> -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/variables.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/banner.css" />
   </head>
   <body>
     <!-- sección del banner -->
     <header class="banner">
       <nav class="navbar">
-        <span>BRAND</span>
+        <span class="navbar_title">Argentus</span>
 
-        <div class="toggle-list">
-          <img
-            id="navbar-toggle"
-            src="./assets/icons/bars.svg"
-            alt="toggle-icon"
-          />
+        <div class="navbar_menu">
+          <label class="menu_button" for="menu_toggle">
+            <img
+              id="navbar-toggle"
+              src="./assets/icons/bars.svg"
+              alt="toggle-icon"
+            />
+          </label>
 
-          <ul id="menu-list" class="menu-list">
-            <li><a href="#">Planes</a></li>
-            <li><a id="paises" href="#">Países</a></li>
-            <li id="list-paises" class="paises toggle">
-              <ul>
-                <li><a href="#">Nueva Zelanda</a></li>
-                <li><a href="#">Holanda</a></li>
-                <li><a href="#">Australia</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Contacto</a></li>
-          </ul>
+          <input type="checkbox" name="menu_toggle" id="menu_toggle" />
+
+          <div class="menu_list">
+            <a class="list_link" href="#">Planes</a>
+
+            <label class="list_link" for="list_toggle">
+              Países
+              <img src="./assets/icons/chevron-down.svg" alt="down arrow" />
+            </label>
+            <input type="checkbox" name="list_toggle" id="list_toggle" />
+
+            <div class="list_menu">
+              <a class="list_link" href="#">Holanda</a>
+              <a class="list_link" href="#">Nueva Zelanda</a>
+              <a class="list_link" href="#">Australia</a>
+            </div>
+
+            <a class="list_link" href="#">Servicios</a>
+            <a class="list_link" href="#">Contacto</a>
+          </div>
         </div>
       </nav>
 
       <div class="banner-text">
-            <div>
-                <h1>Empezá tu <br />
-                Viaje a <br />
-                <span
-                    class="txt-rotate"
-                    data-period="2000"
-                    data-rotate='[ "Tus sueños.", "Nuevas experiencias.", "Nuevas oportunidades." ]'></span>
-                </h1>
-            </div>
+        <h1>
+          Empezá tu <br />
+          Viaje a <br />
+          <span
+            class="txt-rotate"
+            data-period="2000"
+            data-rotate='[ "Tus sueños.", "Nuevas experiencias.", "Nuevas oportunidades." ]'
+          ></span>
+        </h1>
 
-            <a class="banner-text-cta" href="#">Asesorate</a>
-        </div>
+        <a class="banner-text-cta" href="#">Asesorate</a>
+      </div>
 
-        <span class="banner-cta">
-            Mirá los países disponibles
-            <img src="./assets/icons/chevron-double-down.svg" alt="down arrow">
-        </span>
+      <span class="banner-cta">
+        Mirá los países disponibles
+        <img src="./assets/icons/chevron-double-down.svg" alt="down arrow" />
+      </span>
     </header>
 
-    <script type="text/javascript" src="./index.js"></script>
+    <script type="text/javascript" src="./assets/js/text-animation.js"></script>
   </body>
 </html>
