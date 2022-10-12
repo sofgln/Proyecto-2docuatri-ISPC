@@ -1,0 +1,67 @@
+/* imports y variables */
+
+
+
+/* reset y configuración general*/
+
+
+
+/* estilos del banner */
+
+
+header div.banner-text {
+    padding: 0 24px;
+}
+
+header div.banner-text div {
+    width: 100%;
+    height: 180px;
+}
+
+header div.banner-text a.banner-text-cta {
+    padding: 16px 32px;
+
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--secondary);
+
+    background-color: transparent;
+
+    border: 1px solid var(--secondary);
+    border-radius: 50px;
+
+    transition: background-color 0.5s 0s ease-out, color 0.5s 0s ease-out;
+}
+
+header div.banner-text a.banner-text-cta:hover {
+    color: #F1F4F9;
+
+    background-color: var(--secondary);
+}
+
+header span.banner-cta {
+    padding: 16px 0;
+
+    font-weight: 200;
+    color: #F1F4F9;
+
+    align-self: center;
+
+    opacity: .8;
+}
+
+header span.banner-cta img {
+    width: 14px;
+}
+
+
+/* estilos del texto animado del banner */
+header div.banner-text div h1 {
+    font-weight: 200;
+    color: #FBF9ED;
+}
+
+header div.banner-text div span {
+    font-weight: 400;
+    color: var(--secondary);
+}

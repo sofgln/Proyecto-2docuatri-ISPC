@@ -1,18 +1,87 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/favicon.ico"
+      type="image/svg+xml"
+    />
     <title>Proyecto 2do Cuatrimestre - ISPC FullStack</title>
-    <meta name="author" content="Cristian, Sofia, Agustin, Celeste, Paula, Vanesa, Alfredo, Joaquin, Giuliano">
-    <meta name="description" content="Proyecto del segundo cuatrimestre de cursada del 2022 en el ISPC modulo Programador FullStack">
-    <link rel="stylesheet" href="./assets/css/index.css">
-</head>
-<body>
-    
+    <meta
+      name="author"
+      content="Cristian, Sofia, Agustin, Celeste, Paula, Vanesa, Alfredo, Joaquin, Giuliano"
+    />
+    <meta
+      name="description"
+      content="Proyecto del segundo cuatrimestre de cursada del 2022 en el ISPC modulo Programador FullStack"
+    />
+    <!-- <link rel="stylesheet" type="text/css" href="./assets/css/index.css" /> -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/variables.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/banner.css" />
+  </head>
+  <body>
+    <!-- sección del banner -->
+    <header class="banner">
+      <nav class="navbar">
+        <span class="navbar_title">Argentus</span>
 
-    <script src="./index.js"></script>
-</body>
+        <div class="navbar_menu">
+          <label class="menu_button" for="menu_toggle">
+            <img
+              id="navbar-toggle"
+              src="./assets/icons/bars.svg"
+              alt="toggle-icon"
+            />
+          </label>
+
+          <input type="checkbox" name="menu_toggle" id="menu_toggle" />
+
+          <div class="menu_list">
+            <a class="list_link" href="#">Planes</a>
+
+            <label class="list_link" for="list_toggle">
+              Países
+              <img src="./assets/icons/chevron-down.svg" alt="down arrow" />
+            </label>
+            <input type="checkbox" name="list_toggle" id="list_toggle" />
+
+            <div class="list_menu">
+              <a class="list_link" href="#">Holanda</a>
+              <a class="list_link" href="#">Nueva Zelanda</a>
+              <a class="list_link" href="#">Australia</a>
+            </div>
+
+            <a class="list_link" href="#">Servicios</a>
+            <a class="list_link" href="#">Contacto</a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="banner-text">
+        <h1>
+          Empezá tu <br />
+          Viaje a <br />
+          <span
+            class="txt-rotate"
+            data-period="2000"
+            data-rotate='[ "Tus sueños.", "Nuevas experiencias.", "Nuevas oportunidades." ]'
+          ></span>
+        </h1>
+
+        <a class="banner-text-cta" href="#">Asesorate</a>
+      </div>
+
+      <span class="banner-cta">
+        Mirá los países disponibles
+        <img src="./assets/icons/chevron-double-down.svg" alt="down arrow" />
+      </span>
+    </header>
+
+    <script type="text/javascript" src="./assets/js/text-animation.js"></script>
+  </body>
 </html>
