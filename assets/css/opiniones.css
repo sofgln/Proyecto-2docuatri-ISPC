@@ -1,0 +1,94 @@
+/* Fuente */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&display=swap');
+/* Iconos */
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+/* Modificando propiedades que vienen por defecto: */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+/* CSS relacionado el Carrusel */
+.container {
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vw;
+  color: #d9e8f0;
+  background-color: #1e2345;
+}
+
+.carousel {
+  display: flex;
+  width: 80%;
+  height: 50vh;
+  overflow-x: hidden;
+}
+
+.carousel-container {
+  border-radius: 5px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 100%);
+  overflow: scroll hidden;
+  scroll-snap-type: x mandatory;
+}
+
+.carousel-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #253E5D;
+  scroll-snap-align: center;
+}
+
+.carousel-slide-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+/* CSS con el CONTENIDO del Carrusel */
+.foto-opinion {
+  border-radius: 50%;
+  width: 20%;
+  height: auto;
+}
+
+.descripcion-opinion {
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  color: #F1F4F9;
+}
+
+.simbolo-ubicacion {
+  font-size: 3vw;
+}
+
+.simbolo-estrella {
+  font-size: 5vw;
+  color: yellow;
+  font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
