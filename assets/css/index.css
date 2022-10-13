@@ -1,0 +1,25 @@
+
+.logros h3{
+    margin: 0;
+}
+
+.logros li{
+    margin-bottom: 6px;
+
+}
+.container{
+    width: 100%;
+    margin: 0px ;
+    background-color: #253E5D;
+}
+.logros{
+   
+	color: #F1F4F9;
+	padding: 20px;
+    font-size: larger;
+    
+    list-style: none;
+    
+    list-style:armenian;
+
+}
