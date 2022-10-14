@@ -21,6 +21,7 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/index.css" />
   </head>
   <body>
+   
     <!-- sección del banner -->
     <header class="banner">
       <nav class="navbar">
@@ -67,22 +68,28 @@
             Mirá los países disponibles
             <img src="./assets/icons/chevron-double-down.svg" alt="down arrow">
         </span>
+      </header>
+<!--PRUEBA DE MAP-->
+
+<div id ="map"> </div> 
 
        <!--Sección del footer-->
-
-        <div class="footer">
-          <h1>BRAND</h1>
+        <footer class="footer_container">
+        <div class="footer_brand">
+          <h3 class="brand_titulo">BRAND</h3>
           <br>
-          <p>
+          <p class="p_style">
           Somos la consultora líder de habla hispana 
           con oportunidades para trabajar en cualquier 
           parte del mundo y disfrutar mientras lo haces.
           </p>
-            <br>
-            <br>
+        </div>
+          <div class="devs">
+
+          
             <h2>Desarrolladores:</h2>
-            <br>
-            <ul>
+          
+            <ul class="devs_ul">
               <li>Agustín</li>
               <li>Alfredo</li>
               <li>Braian</li>
@@ -93,22 +100,22 @@
               <li>Sofía</li>
               <li>Vanessa</li>
             </ul>
-            <br>
-            <br>
-            <br>
-            <p class="subfooter_p">
-              Desde 2019 - 2022 © BRAND <br>
+            </div>
+            <div class="devs_final">
+
+            <p>
+              Desde 2019 - 2022 © BRAND 
               <a href="#">www.BRAND.com</a>
             </p>
-            <div class="footer_link">
-              <a href="#">Aviso Legal</a>
-            <a href="#">Politica de Privacidad</a>
-            <a href="#">Cookies</a>
+            <p class="p_links">
+            <a href="#">Aviso Legal</a>-<a href="#">Politica de Privacidad</a>-<a href="#">Cookies</a>
+            </p>
             </div>
+           
             
-        </div>
-    </header>
-
+        </footer>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCKiIqCdZGrVxx06LSbe7uG3zXOq1Cz5k&callback=initMap" async defer></script>
     <script type="text/javascript" src="./index.js"></script>
   </body>
 </html>
