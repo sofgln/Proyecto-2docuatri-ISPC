@@ -1,0 +1,49 @@
+form.form {
+    width: 90%;
+
+    margin: auto;
+    padding: 24px; 
+
+    background-color: var(--primary);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    border-radius: 8px;
+}
+
+.form_inputs {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+
+.form_inputs .inputs_input {
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.inputs_input .input_tel {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.input_tel input[name="cod_area"] {
+    width: 25%;
+}
+
+
+
+/*::plceholder color: rgba(255, 255, 255, 1);< */

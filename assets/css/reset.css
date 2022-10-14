@@ -34,7 +34,7 @@ ul {
 }
 
 /* form reset */
-input {
+input, textarea {
     background-color: transparent;
 
     border: none;

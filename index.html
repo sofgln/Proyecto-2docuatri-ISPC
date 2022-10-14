@@ -23,6 +23,7 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/navbar.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/banner.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/contactanos-form.css" />
   </head>
   <body>
     <!-- sección del banner -->
@@ -81,6 +82,29 @@
         <img src="./assets/icons/chevron-double-down.svg" alt="down arrow" />
       </span>
     </header>
+
+    <form class="form" action="#" method="post">
+      <div class="form_inputs">
+        <div class="inputs_input">
+          <input class="form_input" type="text" name="name" id="name" placeholder="Germán Ramirez">
+          <span class="form_error">error text</span>
+        </div>
+
+        <div class="inputs_input">
+          <div class="input_tel">
+            <input class="form_input" type="tel" name="cod_area" id="cod_area" placeholder="11">
+            <input class="form_input" type="tel" name="tel" id="tel" placeholder="456-4335">
+          </div>
+          <span class="form_error">error text</span>
+        </div>
+
+        <div class="inputs_input">
+          <textarea class="form_textarea" name="message" id="message" cols="30" rows="10" placeholder="Mensaje"></textarea>
+        </div>
+      </div>
+
+      <input type="submit" value="Quiero que me asesoren">
+    </form>
 
     <script type="text/javascript" src="./assets/js/text-animation.js"></script>
   </body>
