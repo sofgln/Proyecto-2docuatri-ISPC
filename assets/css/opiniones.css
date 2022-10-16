@@ -12,6 +12,7 @@
   --star-color: #E0D14C;
   --boton-color: #075293;
   --boton-color-2: #C6E7EC;
+  --text-color: #FBF9ED;
 }
 
 /* Modificando propiedades que vienen por defecto: */
@@ -54,8 +55,9 @@ body {
   border-radius: 5px;
   display: grid;
   grid-template-columns: repeat(3, 100%);
-  overflow: scroll hidden;
+  overflow: hidden;
   scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
 }
 
 .carousel-slide {
@@ -73,7 +75,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: center; 
+  align-items: center;
 }
 
 /* CSS con el CONTENIDO del Carrusel */
@@ -87,7 +89,7 @@ body {
   text-align: center;
   font-family: 'Inter', sans-serif;
   font-size: 3.5vw;
-  color: #F1F4F9;
+  color: var(--text-color);
   height: 45%;
   display: flex;
   flex-direction: column;
@@ -111,25 +113,82 @@ body {
 
 .mensaje-opinion {
   height: 40%;
+  font-size: 3.5vw;
 }
 
-/* Botones */
+.mensaje-opinion .comilla-apertura {
+  color: var(--text-color);
+}
+
+.mensaje-opinion .comilla-cierre {
+  color: var(--text-color);
+  transform: rotate(180deg);
+}
+
+/* Botones Carrusel */
 
 .botones-carousel {
   margin-top: 10px;
 }
 
-a {
+.botones-carousel a {
   text-decoration: none;
+  margin-left: 2.5px;
+  margin-right: 2.5px;
 }
-
 
 .botones {
   font-size: 3vw;
-  color: var(--boton-color);
+  color: var(--boton-color-2);
   font-variation-settings:
     'FILL' 1,
     'wght' 400,
     'GRAD' 0,
     'opsz' 48
+}
+
+.botones:hover {
+  color: var(--boton-color);
+}
+
+/* VERSION DE ESCRITORIO */
+
+@media screen and (min-width: 1024px) {
+  .carousel {
+    width: 80%;
+    height: 70vh;
+  }
+
+  .foto-opinion {
+    margin-top: 10px;
+    width: 28%;
+  }
+
+  .descripcion-opinion {
+    font-size: 1.8vw;
+  }
+
+  .simbolo-ubicacion {
+    font-size: 1.5vw;
+  }
+
+  .simbolo-estrella {
+    font-size: 3vw;
+  }
+
+  .mensaje-opinion {
+    font-size: 2vw;
+  }
+
+  .mensaje-opinion .comilla-apertura {
+    color: var(--text-color);
+    margin-bottom: 5px;
+  }
+
+  .mensaje-opinion .comilla-cierre {
+    color: var(--text-color);
+    transform: rotate(180deg);
+    margin-bottom: 5px;
+  }
+
 }
