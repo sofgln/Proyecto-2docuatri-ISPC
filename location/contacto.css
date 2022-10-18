@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&display=swap');
+
+
+
+html{
+    height: 100vh;
+    width: 100vw;
+    margin: 0%;
+}
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Inter', 'monospace';
+   
+}
+
+.icon__map__container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.icons__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 85%;
+
+
+
+
+}
+
+.main__container{
+    margin: 0;
+    height: 50%;
+}
+ .fa-facebook{
+    color: #3c5898;
+ }
+ .fa-whatsapp{
+    color: #075e54;
+ }
+ .fa-instagram{
+    color:#833AB4;
+ }
+ h3{
+    margin-left: 10px;
+ }
