@@ -1,0 +1,76 @@
+
+
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.logros{
+   
+	color: #F1F4F9;
+	padding: 2.5rem;
+    font-weight: lighter;
+    background-color: #253E5D;
+    
+
+}
+
+.logros h3{
+    font-size: large;
+    margin-bottom: 1rem;
+
+}
+
+.logros li{
+    margin-bottom: 16px;
+    margin-left: 1rem ;
+    list-style: none;
+    font-size:large;
+    
+
+}
+
+@media (max-width: 350px){
+    .logros{
+   
+       
+        padding: 1rem;
+        font-size:small;
+        
+    
+    }
+    .logros li{
+        margin-bottom: 16px;
+        margin-left: 1rem ;
+        list-style: none;
+        
+    
+    }
+}
+
+@media (min-width: 700px){
+    .logros{
+   
+       
+        padding: 4rem;
+        font-size:x-large;
+        
+    
+    }
+    .logros h3{
+        font-size:2rem;
+    }
+    .logros li{
+        margin-bottom: 16px;
+        margin-left: 1rem ;
+        list-style: none;
+        font-size: 2rem;
+    }
+        
+    
+    }
+ 

@@ -23,10 +23,16 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/navbar.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/banner.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/quienes_somos.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/logros.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/btn-volver.css" />
   </head>
   <body>
+   <div class="prueba">
+    <h1>Cambios, cambios</h1>
+   </div>
+
     <!-- sección del banner -->
-    <header class="banner">
+    <header id="banner" class="banner">
       <nav class="navbar">
         <span class="navbar_title">Argentus</span>
 
@@ -82,6 +88,7 @@
       </span>
     </header>
 
+
     <!-- Sección de quienes somos -->
     <section class="quienes-somos">
       <h3 class="quienes-somos_titulo">¿Quienes Somos?</h3>
@@ -99,6 +106,15 @@
         Zelanda, Holanda y Australia. Consiguiendo descuentos en hoteles
         locales, planes de viaje y mucho más...
       </p>
+ <section class="logros">
+      <h2 class="logros_title">Logros</h2>
+      <ul class="logros_lista">
+        <li class="lista_logro"><b class="lista_logro-numero">+ 1.000</b> argentinos emigrados</li>
+        <li class="lista_logro"><b class="lista_logro-numero">+ 20</b> oficinas</li>
+        <li class="lista_logro"><b class="lista_logro-numero">+ 3</b> paises destino</li>
+        <li class="lista_logro"><b class="lista_logro-numero">+ 35</b> empresas socias</li>
+      </ul>
+    </section>
 
       <h3 class="quienes-somos_titulo">Proximas Metas</h3>
       <p class="quienes-somos_parrafo">
@@ -107,6 +123,11 @@
         beneficios.
       </p>
     </section>
+   
+
+    <a href="#banner" class="btn-volver">
+      <img src="./assets/icons/chevron-up.svg" alt="boton para volver arriba">
+    </a>
 
     <script type="text/javascript" src="./assets/js/text-animation.js"></script>
   </body>
