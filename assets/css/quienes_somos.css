@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    width: 100vw;
+
+    font-family: 'Inter', sans-serif;
+
+    overflow-x: hidden;
+}
+.section-quienes-somos{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:flex-start;
+    padding:0 24px;
+    gap:16px;
+
+    width: 90%;
+    height:40%;
+
+    flex: none;
+    order:3;
+    align-self: stretch;
+    flex-grow: 0;
+
+
+}
+section img{
+    /* imagen */
+    /* Auto layout */
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    padding: 10px;
+    gap: 10px;
+
+    width: 100%;
+    height: 80%;
+
+    background: url(joel-mott-dQBkIZzyM-4-unsplash);
+    border-radius: 8px;
+
+    /* Inside auto layout */
+
+     flex: none;
+     order: 2;
+     flex-grow: 0;
+}
+.textos {
+
+    width: 100%;
+    height: 50%;
+    margin-top: 1em;
+    letter-spacing:0.2em;
+}
+.estilo_parrafos {
+     color:black;
+     font-size: 1.5em;
+    font-weight: 300;
+}
+.estilo_titulos {
+    color:black;
+    font-size: 2em;
+    font-weight: 300;
+}
