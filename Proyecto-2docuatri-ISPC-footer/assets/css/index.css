@@ -1,0 +1,289 @@
+/* imports y variables */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&display=swap');
+
+:root {
+    --primary: #253E5D;
+    --secondary: #DF6B2B;
+}
+
+
+/* reset y configuración general*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+
+    font-family: 'Inter', sans-serif;
+
+    overflow-x: hidden;
+}
+
+
+/* estilos del banner */
+header {
+    width: 100vw;
+    height: 100vh;
+
+    background-image: linear-gradient(to top, rgba(20, 20, 20, .75), rgba(20, 20, 20, .65), rgba(20, 20, 20, .95)) ,url('../images/banner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+header div.banner-text {
+    padding: 0 24px;
+}
+
+header div.banner-text div {
+    width: 100%;
+    height: 180px;
+}
+
+header div.banner-text a.banner-text-cta {
+    padding: 16px 32px;
+
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--secondary);
+
+    background-color: transparent;
+
+    border: 1px solid var(--secondary);
+    border-radius: 50px;
+
+    transition: background-color 0.5s 0s ease-out, color 0.5s 0s ease-out;
+}
+
+header div.banner-text a.banner-text-cta:hover {
+    color: #F1F4F9;
+
+    background-color: var(--secondary);
+}
+
+header span.banner-cta {
+    padding: 16px 0;
+
+    font-weight: 200;
+    color: #F1F4F9;
+
+    align-self: center;
+
+    opacity: .8;
+}
+
+header span.banner-cta img {
+    width: 14px;
+}
+
+
+/* estilos del texto animado del banner */
+header div.banner-text div h1 {
+    font-weight: 200;
+    color: #FBF9ED;
+}
+
+header div.banner-text div span {
+    font-weight: 400;
+    color: var(--secondary);
+}
+
+
+/* estilos de la barra de navageción */
+nav.navbar {
+    width: 100%;
+    height: 80px;
+
+    padding: 16px 24px;
+
+    color: #F1F4F9;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+nav span {
+    font-size: 24px;
+    font-weight: 400;
+
+    color: #FBF9ED
+}
+
+nav div.toggle-list img {
+    width: 26px;
+    height: 26px;
+
+    cursor: pointer
+}
+
+
+/* estilos generales de menu general y de paises */
+ul.menu-list, li.paises ul {
+    width: 100%;
+
+    list-style: none;
+
+    z-index: 2;
+}
+
+
+/* estilos generales de elementos 'li' de menu general y menu paises */
+ul.menu-list li, li.paises ul li {
+    width: 100%;
+
+    padding: 24px 16px;
+}
+
+ul.menu-list li a, li.paises ul li a {
+    width: 100%;
+
+    padding: 16px 0;
+
+    font-size: 16px;
+    font-weight: 200;
+    text-align: left;
+    text-decoration: none;
+    
+    color: #F1F4F9;
+
+    display: inline-block;
+}
+
+
+/* estilos de menu general */
+ul.menu-list {
+    width: 100%;
+    height: auto;
+
+    padding: 24px 16px;
+
+    background-color: rgba(25, 25, 25, .95);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    position: absolute;
+
+    top: 80px;
+    left: 100%;
+
+    transition: left .5s 0s ease-out;
+}
+
+ul.menu-list.toggle {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    left: 0;
+}
+
+
+/* estilos de menu paises */
+li.paises {
+    display: none;
+}
+
+li.paises.toggle {
+    display: block;
+}
+
+li.paises.toggle ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer_container {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: rgba(28,39,41,255);
+    color: #F1F4F9;
+    text-align: center;
+    justify-content: flex-start;
+}
+
+
+.footer_brand{
+    display: flex;
+    justify-content:flex-start;
+    flex-direction: column;
+    height: 30%;
+    justify-content: center;
+}
+.p_style{
+    width: 90%;
+    text-align: left;
+    margin:0px 20px;
+
+}
+.brand_titulo{
+  
+    margin-top: 0;
+    font-size: 2em;
+    text-align: left;
+    margin-bottom: 0;
+    margin-left: 20px;
+}
+
+.devs{
+    display: flex;
+   flex-direction: column;
+   width: 100%;
+   align-items: flex-start;
+   margin-left: 20px;
+ }
+
+ .devs_ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px; 
+    margin-top: 10px;
+ }
+
+ .devs_final{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+ }
+
+ .devs_link{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    
+ }
+
+ 
+.p_links{
+    font-size: 10px;
+}
+
+ #map {
+        height: 100%;
+      }
