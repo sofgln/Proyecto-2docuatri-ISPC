@@ -24,7 +24,8 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/banner.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/quienes_somos.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/logros.css" />
-    <link rel="stylesheet" href="./assets/css/opiniones.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/opiniones.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/contactanos-form.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/btn-volver.css" />
   </head>
   <body>
@@ -217,10 +218,36 @@
       </article>
     </div>
 
+    <form class="form" action="#" method="post">
+      <div class="form_inputs">
+        <div class="inputs_input">
+          <input class="form_input" type="text" name="name" id="name" placeholder="Germán Ramirez" autocomplete="off">
+        </div>
+
+        <div class="inputs_input">
+          <input class="form_input" type="email" name="email" id="email" placeholder="Email (opcional)" autocomplete="off">
+        </div>
+
+        <div class="inputs_input">
+          <div class="input_tel">
+            <input class="form_input" type="tel" name="cod_area" id="cod_area" placeholder="11" autocomplete="off">
+            <input class="form_input" type="tel" name="tel" id="tel" placeholder="456-4335" autocomplete="off">
+          </div>
+        </div>
+
+        <div class="inputs_input">
+          <textarea class="form_textarea" name="message" id="message" cols="30" rows="10" placeholder="Mensaje" autocomplete="off"></textarea>
+        </div>
+      </div>
+
+      <input type="submit" value="Quiero que me asesoren">
+    </form>
+
     <a href="#banner" class="btn-volver">
       <img src="./assets/icons/chevron-up.svg" alt="boton para volver arriba" />
     </a>
     
+
     <script type="text/javascript" src="./assets/js/text-animation.js"></script>
   </body>
 </html>
