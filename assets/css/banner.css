@@ -1,4 +1,4 @@
-header {
+.banner {
     width: 100vw;
     height: 100vh;
 
@@ -13,7 +13,7 @@ header {
     align-items: flex-start;
 }
 
-header .banner-text {
+.banner .banner-text {
     margin-top: -100px;
     padding: 0 24px;
 
@@ -23,7 +23,7 @@ header .banner-text {
     align-items: flex-start;
 }
 
-header .banner-cta {
+.banner .banner-cta {
     padding: 16px 0;
 
     font-size: 1.4rem;
@@ -37,7 +37,7 @@ header .banner-cta {
     user-select: none;
 }
 
-header .banner-cta img {
+.banner .banner-cta img {
     width: 1.2rem;
 
     margin-bottom: -.2rem;
@@ -45,7 +45,7 @@ header .banner-cta img {
 
 
 
-header .banner-text h1 {
+.banner .banner-text h1 {
     height: 18.5rem;
 
     font-size: 3.6rem;
@@ -57,13 +57,13 @@ header .banner-text h1 {
     user-select: none;
 }
 
-header .banner-text span {
+.banner .banner-text span {
     font-size: 3.6rem;
     font-weight: 400;
     color: var(--secondary);
 }
 
-header .banner-text .banner-text-cta {
+.banner .banner-text .banner-text-cta {
     padding: 1.4rem 2.8rem;
 
     font-size: 1.4rem;
@@ -81,20 +81,20 @@ header .banner-text .banner-text-cta {
     user-select: none;
 }
 
-header .banner-text .banner-text-cta:hover {
+.banner .banner-text .banner-text-cta:hover {
     color: #F1F4F9;
 
     background-color: var(--secondary);
 }
 
 @media screen and (min-width: 1024px) {
-    header {
+    .banner {
         height: 100vh;
 
         background-image: linear-gradient(to top, rgba(20, 20, 20, .75), rgba(20, 20, 20, .65), rgba(20, 20, 20, .95)) ,url('../images/banner-desktop.jpg');
     }
 
-    header .banner-text {
+    .banner .banner-text {
         margin-top: -50px;
         padding: 0 24px;
     
@@ -104,7 +104,7 @@ header .banner-text .banner-text-cta:hover {
         align-items: flex-start;
     }
 
-    header .banner-text h1 {
+    .banner .banner-text h1 {
         height: 14.4rem;
     
         font-size: 3.6rem;
@@ -115,7 +115,7 @@ header .banner-text .banner-text-cta:hover {
     }
 
 
-    header .banner-text .banner-text-cta {
+    .banner .banner-text .banner-text-cta {
         padding: 1.6rem 3.2rem;
     
         font-size: 1.6rem;

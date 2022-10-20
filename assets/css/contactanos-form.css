@@ -1,0 +1,105 @@
+form.form {
+    width: 95%;
+    max-width: 700px;
+
+    margin: 32px auto;
+    padding: 24px 24px 32px; 
+
+    background-color: var(--primary);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    border-radius: 8px;
+}
+
+.form_inputs {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.form_inputs .inputs_input {
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+
+.inputs_input input, .input_tel input, .inputs_input textarea {
+    width: 100%;
+    height: 5.4rem;
+
+    margin: 8px 0;
+    padding: 1.4rem 2rem;
+
+    font-size: 1.6rem;
+    color: #f1f4f974;
+
+    border-bottom: 1px solid #f1f4f974;
+}
+
+.inputs_input textarea {
+    resize: none;
+}
+
+
+.inputs_input .input_tel {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input_tel input[name="cod_area"] {
+    width: 26%;
+}
+
+.input_tel input[name="tel"] {
+    width: 66%;
+}
+
+
+
+.inputs_input input:focus, .input_tel input:focus, .inputs_input textarea:focus {
+    color: #f1f4f9d7;
+
+    border-bottom: 1px solid #f1f4f9df;
+}
+
+.inputs_input input:focus::placeholder, .input_tel input:focus::placeholder, .inputs_input textarea:focus::placeholder {
+    color: #f1f4f9;
+}
+
+
+
+input[type="submit"] {
+    width: 100%;
+
+    margin: 32px 0 16px;
+    padding: 1.4rem 2rem;
+
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #f1f4f9;
+
+    background-color: var(--secondary);
+
+    border-radius: 50px;
+
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #b35928;
+}
