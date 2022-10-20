@@ -46,7 +46,7 @@
     .logros .logros_title {
         margin-bottom: 32px;
     
-        font-size: 2.8rem;
+        font-size: 2.4rem;
     }
 
     .logros .logros_lista {
@@ -56,7 +56,7 @@
     .lista_logro, .lista_logro-numero {
         padding: 16px 0;
         
-        font-size: 2.4rem;
+        font-size: 2rem;
     }
 
     .lista_logro-numero {
