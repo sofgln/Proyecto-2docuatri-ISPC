@@ -1,0 +1,37 @@
+.logros {
+    width: 100vw;
+    
+    margin: 24px 0;
+    padding: 24px;
+
+    background-color: var(--primary);
+}
+
+.logros .logros_title {
+    margin-bottom: 16px;
+
+    font-size: 1.6rem;
+
+    opacity: .95;
+}
+
+.logros .logros_lista {
+    padding: 0 0 0 8px;
+}
+
+
+
+.lista_logro, .lista_logro-numero {
+    padding: 8px 0;
+    
+    font-size: 1.6rem;
+    font-weight: 200;
+
+    opacity: .75;
+}
+
+.lista_logro-numero {
+    font-weight: 400;
+
+    opacity: 1;
+}

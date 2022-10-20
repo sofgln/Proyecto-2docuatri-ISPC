@@ -19,7 +19,7 @@ body {
 
 
 /* text and list reset*/
-h1, h2, h3, h4, h5, h6, p, span, a, label {
+h1, h2, h3, h4, h5, h6, p, span, a, label, li {
     font-size: 1em;
     font-weight: 300;
     color: #F1F4F9;
