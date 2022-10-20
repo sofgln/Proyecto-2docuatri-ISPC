@@ -35,3 +35,31 @@
 
     opacity: 1;
 }
+
+
+@media screen and (min-width: 1024px) {
+    .logros {
+        margin: 48px 0;
+        padding: 48px 24px;
+    }
+
+    .logros .logros_title {
+        margin-bottom: 32px;
+    
+        font-size: 2.8rem;
+    }
+
+    .logros .logros_lista {
+        padding-left: 16px;
+    }
+
+    .lista_logro, .lista_logro-numero {
+        padding: 16px 0;
+        
+        font-size: 2.4rem;
+    }
+
+    .lista_logro-numero {
+        opacity: 1;
+    }
+}
