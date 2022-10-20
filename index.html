@@ -22,12 +22,9 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/navbar.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/banner.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="./assets/css/quienes_somos.css"
-    />
+    <link rel="stylesheet" type="text/css" href="./assets/css/quienes_somos.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/logros.css" />
+    <link rel="stylesheet" href="./assets/css/opiniones.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/btn-volver.css" />
   </head>
   <body>
@@ -36,58 +33,50 @@
       <nav class="navbar">
         <span class="navbar_title">Argentus</span>
 
-        <div class="navbar_menu">
-          <label class="menu_button" for="menu_toggle">
-            <img
-              id="navbar-toggle"
-              src="./assets/icons/bars.svg"
-              alt="toggle-icon"
-            />
+      <div class="navbar_menu">
+        <label class="menu_button" for="menu_toggle">
+          <img id="navbar-toggle" src="./assets/icons/bars.svg" alt="toggle-icon" />
+        </label>
+
+        <input type="checkbox" name="menu_toggle" id="menu_toggle" />
+
+        <div class="menu_list">
+          <a class="list_link" href="#">Planes</a>
+
+          <label class="list_link" for="list_toggle">
+            Países
+            <img src="./assets/icons/chevron-down.svg" alt="down arrow" />
           </label>
+          <input type="checkbox" name="list_toggle" id="list_toggle" />
 
-          <input type="checkbox" name="menu_toggle" id="menu_toggle" />
-
-          <div class="menu_list">
-            <a class="list_link" href="#">Planes</a>
-
-            <label class="list_link" for="list_toggle">
-              Países
-              <img src="./assets/icons/chevron-down.svg" alt="down arrow" />
-            </label>
-            <input type="checkbox" name="list_toggle" id="list_toggle" />
-
-            <div class="list_menu">
-              <a class="list_link" href="#">Holanda</a>
-              <a class="list_link" href="#">Nueva Zelanda</a>
-              <a class="list_link" href="#">Australia</a>
-            </div>
-
-            <a class="list_link" href="#">Servicios</a>
-            <a class="list_link" href="#">Contacto</a>
+          <div class="list_menu">
+            <a class="list_link" href="#">Holanda</a>
+            <a class="list_link" href="#">Nueva Zelanda</a>
+            <a class="list_link" href="#">Australia</a>
           </div>
+
+          <a class="list_link" href="#">Servicios</a>
+          <a class="list_link" href="#">Contacto</a>
         </div>
-      </nav>
-
-      <div class="banner-text">
-        <h1>
-          Empezá tu <br />
-          Viaje a <br />
-          <span
-            class="txt-rotate"
-            data-period="2000"
-            data-rotate='[ "Tus sueños.", "Nuevas experiencias.", "Nuevas oportunidades." ]'
-          ></span>
-        </h1>
-
-        <a class="banner-text-cta" href="#">Asesorate</a>
       </div>
+    </nav>
 
-      <span class="banner-cta">
-        Mirá los países disponibles
-        <img src="./assets/icons/chevron-double-down.svg" alt="down arrow" />
-      </span>
-    </header>
+    <div class="banner-text">
+      <h1>
+        Empezá tu <br />
+        Viaje a <br />
+        <span class="txt-rotate" data-period="2000"
+          data-rotate='[ "Tus sueños.", "Nuevas experiencias.", "Nuevas oportunidades." ]'></span>
+      </h1>
 
+      <a class="banner-text-cta" href="#">Asesorate</a>
+    </div>
+
+    <span class="banner-cta">
+      Mirá los países disponibles
+      <img src="./assets/icons/chevron-double-down.svg" alt="down arrow" />
+    </span>
+  </header>
     <!-- Sección de quienes somos -->
     <section class="quienes-somos">
       <h3 class="quienes-somos_titulo">¿Quienes Somos?</h3>
@@ -130,11 +119,108 @@
         beneficios.
       </p>
     </section>
+    
+    <div class="container">
+      <article class="carrousel">
+        <div class="card-opinion">
+          <header class="card-opinion_header">
+            <figure class="foto-opinion">
+              <img src="./assets/images/user-1.jpg" alt="imagen de quien opina" />
+            </figure>
+  
+            <h3 class="header_nombre">Nicolás Valdéz</h3>
+  
+            <span class="header_ubicacion">
+              <img
+                src="./assets/icons/geo-alt-fill.svg"
+                alt="icono de ubicación"
+              />
+              Catamarca
+            </span>
+  
+            <div class="header_rate">
+              <img src="./assets/icons/star-fill.svg" alt="" />
+              <img src="./assets/icons/star-fill.svg" alt="" />
+              <img src="./assets/icons/star-fill.svg" alt="" />
+              <img src="./assets/icons/star-fill.svg" alt="" />
+              <img src="./assets/icons/star.svg" alt="" />
+            </div>
+          </header>
+  
+          <p class="card-opinion_opinion">
+            Una experiencia de lo más placentera durante mi visado en Nueva
+            Zelanda, el papeleo fue rápido y sacaron todas mis dudas
+          </p>
+        </div>
+  
+        <div class="card-opinion">
+          <header class="card-opinion_header">
+            <figure class="foto-opinion">
+              <img src="./assets/images/user-2.jpg" alt="imagen de quien opina" />
+            </figure>
+  
+            <h3 class="header_nombre">Nicolás Valdéz</h3>
+  
+            <span class="header_ubicacion">
+              <img
+                src="./assets/icons/geo-alt-fill.svg"
+                alt="icono de ubicación"
+              />
+              Catamarca
+            </span>
+  
+            <div class="header_rate">
+              <img src="./assets/icons/star-fill.svg" alt="" />
+              <img src="./assets/icons/star-fill.svg" alt="" />
+              <img src="./assets/icons/star-fill.svg" alt="" />
+              <img src="./assets/icons/star-fill.svg" alt="" />
+              <img src="./assets/icons/star.svg" alt="" />
+            </div>
+          </header>
+  
+          <p class="card-opinion_opinion">
+            Una experiencia de lo más placentera durante mi visado en Nueva
+            Zelanda, el papeleo fue rápido y sacaron todas mis dudas
+          </p>
+        </div>
+  
+        <div class="card-opinion">
+          <header class="card-opinion_header">
+            <figure class="foto-opinion">
+              <img src="./assets/images/user-3.jpg" alt="imagen de quien opina" />
+            </figure>
+  
+            <h3 class="header_nombre">Nicolás Valdéz</h3>
+  
+            <span class="header_ubicacion">
+              <img
+                src="./assets/icons/geo-alt-fill.svg"
+                alt="icono de ubicación"
+              />
+              Catamarca
+            </span>
+  
+            <div class="header_rate">
+              <img src="./assets/icons/star-fill.svg" alt="" />
+              <img src="./assets/icons/star-fill.svg" alt="" />
+              <img src="./assets/icons/star-fill.svg" alt="" />
+              <img src="./assets/icons/star-fill.svg" alt="" />
+              <img src="./assets/icons/star.svg" alt="" />
+            </div>
+          </header>
+  
+          <p class="card-opinion_opinion">
+            Una experiencia de lo más placentera durante mi visado en Nueva
+            Zelanda, el papeleo fue rápido y sacaron todas mis dudas
+          </p>
+        </div>
+      </article>
+    </div>
 
     <a href="#banner" class="btn-volver">
       <img src="./assets/icons/chevron-up.svg" alt="boton para volver arriba" />
     </a>
-
+    
     <script type="text/javascript" src="./assets/js/text-animation.js"></script>
   </body>
 </html>
