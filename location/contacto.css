@@ -51,3 +51,22 @@ body{
  h3{
     margin-left: 10px;
  }
+
+ /*RESPONSIVE DE ESCRITORIO*/
+
+ @media  only screen and (min-width:992px){
+
+.mapa{
+height: 270px;
+width: 400px;
+ }
+.titulo_contactanos{
+    font-size: 22px;
+}
+
+.icons__container{
+
+    width: 30px;
+    font-size: 25px;
+}
+}
