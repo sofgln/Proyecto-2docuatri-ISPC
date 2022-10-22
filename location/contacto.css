@@ -61,7 +61,7 @@ height: 270px;
 width: 400px;
  }
 .titulo_contactanos{
-    font-size: 22px;
+    font-size: 23px;
 }
 
 .icons__container{
@@ -70,4 +70,19 @@ width: 400px;
     font-size: 25px;
 }
 }
-/*Esto es un mensajito*/
+@media  only screen and (max-width:600px){
+
+    .mapa{
+    height: 300px;
+    width: 400px;
+     }
+    .titulo_contactanos{
+        font-size: 20px;
+    }
+    
+    .icons__container{
+    
+        width: 30px;
+        font-size: 20px;
+    }
+    }
