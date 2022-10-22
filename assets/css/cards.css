@@ -1,54 +1,63 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
-
-body {
+.paises {
     width: 100%;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
+
+    padding: 48px 24px;
 }
 
-.container {
+h2.paises_titulo {
+    font-size: 2rem;
+    font-weight: 400;
+    color: rgba(20, 20, 20, .65);
+}
+
+
+.paises_cards  .card {
     width: 100%;
-    position: relative;
-    justify-content: center;
+    max-width: 350px;
+    height: 200px;
+
+    margin: 30px auto;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border-radius: 8px;
+
+    transition: all .4s ease-out;
+
+    cursor: pointer;
 }
 
-.container .card {
-    width: auto;
-    height: 400px;
-    border-radius: 40px;
-    overflow: hidden;
-    background: auto;
-    position: relative;
-    margin: 30px 30px 30px 30px;
-    box-shadow: 0px 0.5px 7px;
-    transition: all 400ms ease;
+.paises_cards .card:nth-child(1) {
+    background-image: linear-gradient(to top, rgba(20, 20, 20, .75), rgba(20, 20, 20, .65), rgba(20, 20, 20, .95)) ,url('../images/card-nueva-zelanda.jpg');
 }
 
-.card:hover {
-    box-shadow: 0.5px 1.5px 12px;
-    transform: translateY(-2%);
+.paises_cards .card:nth-child(2) {
+    background-image: linear-gradient(to top, rgba(20, 20, 20, .75), rgba(20, 20, 20, .65), rgba(20, 20, 20, .95)) ,url('../images/card-holanda.jpg');
 }
 
-.card img {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    opacity: 80%;
+.paises_cards .card:nth-child(3) {
+    background-image: linear-gradient(to top, rgba(20, 20, 20, .75), rgba(20, 20, 20, .65), rgba(20, 20, 20, .95)) ,url('../images/card-australia.jpg');
 }
+
 
 .card .text {
-    font-size: 5rem;
-    position: absolute;
-    color: rgb(255, 255, 255);
-    bottom: 50px;
-    left: 70px;
-    text-shadow: -3px 3px 2px rgb(0, 0, 0);
-    opacity: 70%;
-    cursor: default;
+    font-size: 1.6rem;
+    color: rgba(255, 255, 255, .85);
+    
+    position: relative;
+    
+    top: 160px;
+    left: 16px;
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    .paises_cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
