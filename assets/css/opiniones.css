@@ -1,0 +1,130 @@
+/* CSS relacionado el Carrusel */
+.container {
+  width: 350px;
+  height: auto;
+
+  padding: 54px 0;
+
+  margin: auto;
+
+  overflow: hidden;
+}
+
+.carrousel {
+  width: 1050px;
+  height: auto;
+
+  margin: auto;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+
+  overflow: hidden;
+
+}
+
+.card-opinion {
+  width: 350px;
+  
+  padding: 24px 24px 32px;
+  
+  background-color: #253E5D;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  border-radius: 8px;
+
+}
+
+/* CSS con el CONTENIDO del Carrusel */
+.card-opinion_header {
+  width: 100%;
+
+  margin-bottom: 16px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.card-opinion_opinion {
+  padding: 0 24px;
+
+  font-size: 1.8rem;
+  text-align: center;
+  
+  opacity: .85;
+}
+
+
+
+.foto-opinion {
+  width: 50px;
+  height: 50px;
+
+  margin-bottom: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.header_nombre, .header_ubicacion {
+  margin: 4px 0;
+
+  font-size: 2rem;
+
+  display: inline-block;
+
+  opacity: .65;
+}
+
+.header_rate {
+  margin-top: 8px;
+}
+
+
+
+.foto-opinion img {
+  height: 100%;
+}
+.foto-opinion img[src="./assets/images/user-3.jpg"] {
+  width: 100%;
+  height: auto;
+}
+
+
+.header_rate img {
+  width: 2.8rem
+}
+
+
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 90vw;
+    height: auto;
+  
+    margin: auto;
+    padding: 54px 0;
+  
+    overflow: hidden;
+  }
+
+  .carrousel {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
