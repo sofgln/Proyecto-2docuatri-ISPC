@@ -52,10 +52,17 @@ body{
     margin-left: 10px;
  }
 
- /*RESPONSIVE DE ESCRITORIO*/
+ /*RESPONSIVE DE ESCRITORIO */
 
  @media  only screen and (min-width:992px){
 
+body{
+    background-color: black;
+
+    }
+    h3{
+        color: azure;
+    }
 .mapa{
 height: 270px;
 width: 400px;
