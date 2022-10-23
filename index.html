@@ -1,18 +1,115 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/favicon.ico"
+      type="image/svg+xml"
+    />
     <title>Proyecto 2do Cuatrimestre - ISPC FullStack</title>
-    <meta name="author" content="Cristian, Sofia, Agustin, Celeste, Paula, Vanesa, Alfredo, Joaquin, Giuliano">
-    <meta name="description" content="Proyecto del segundo cuatrimestre de cursada del 2022 en el ISPC modulo Programador FullStack">
-    <link rel="stylesheet" href="./assets/css/index.css">
-</head>
-<body>
-    
+    <meta
+      name="author"
+      content="Cristian, Sofia, Agustin, Celeste, Paula, Vanesa, Alfredo, Joaquin, Giuliano"
+    />
+    <meta
+      name="description"
+      content="Proyecto del segundo cuatrimestre de cursada del 2022 en el ISPC modulo Programador FullStack"
+    />
+    <link rel="stylesheet" type="text/css" href="./assets/css/footer.css" />
+  </head>
+  <body>
+   
+    <!-- sección del banner -->
+    <header class="banner">
+      <nav class="navbar">
+        <span>BRAND</span>
 
-    <script src="./index.js"></script>
-</body>
+        <div class="toggle-list">
+          <img
+            id="navbar-toggle"
+            src="./assets/icons/bars.svg"
+            alt="toggle-icon"
+          />
+
+          <ul id="menu-list" class="menu-list">
+            <li><a href="#">Planes</a></li>
+            <li><a id="paises" href="#">Países</a></li>
+            <li id="list-paises" class="paises toggle">
+              <ul>
+                <li><a href="#">Nueva Zelanda</a></li>
+                <li><a href="#">Holanda</a></li>
+                <li><a href="#">Australia</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="banner-text">
+            <div>
+                <h1>Empezá tu <br />
+                Viaje a <br />
+                <span
+                    class="txt-rotate"
+                    data-period="2000"
+                    data-rotate='[ "Tus sueños.", "Nuevas experiencias.", "Nuevas oportunidades." ]'></span>
+                </h1>
+            </div>
+
+            <a class="banner-text-cta" href="#">Asesorate</a>
+        </div>
+
+        <span class="banner-cta">
+            Mirá los países disponibles
+            <img src="./assets/icons/chevron-double-down.svg" alt="down arrow">
+        </span>
+      </header>
+       <!--Sección del footer-->
+        <footer class="footer_container">
+        <div class="footer_brand">
+          <h3 class="brand_titulo">BRAND</h3>
+          <br>
+          <p class="p_style">
+          Somos la consultora líder de habla hispana 
+          con oportunidades para trabajar en cualquier 
+          parte del mundo y disfrutar mientras lo haces.
+          </p>
+        </div>
+          <div class="devs">
+
+          
+            <h2>Desarrolladores:</h2>
+          
+            <ul class="devs_ul">
+              <li>Agustín</li>
+              <li>Alfredo</li>
+              <li>Braian</li>
+              <li>Celeste</li>
+              <li>Cristian</li>
+              <li>Giuliano</li>
+              <li>Paula</li>
+              <li>Sofía</li>
+              <li>Vanessa</li>
+            </ul>
+            </div>
+            <div class="devs_final">
+
+            <p>
+              Desde 2019 - 2022 © BRAND 
+              <a href="#">www.BRAND.com</a>
+            </p>
+            <p class="p_links">
+            <a href="#">Aviso Legal</a>-<a href="#">Politica de Privacidad</a>-<a href="#">Cookies</a>
+            </p>
+            </div>
+           
+            
+        </footer>
+    <script type="text/javascript" src="./index.js"></script>
+  </body>
 </html>
