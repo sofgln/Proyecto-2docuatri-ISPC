@@ -52,32 +52,15 @@ body{
     margin-left: 10px;
  }
 
- /*RESPONSIVE DE ESCRITORIO */
+ /*phones*/
+@media only screen and (min-width: 425px) and (max-width: 479px){
 
- @media  only screen and (min-width:992px){
-
-body{
-    background-color: black;
-
-    }
-    h3{
-        color:beige;
-    }
-.mapa{
-height: 270px;
-width: 400px;
- }
-.titulo_contactanos{
-    font-size: 23px;
 }
 
-.icons__container{
 
-    width: 30px;
-    font-size: 25px;
-}
-}
-@media  only screen and (max-width:600px){
+
+/*small devices*/
+@media only screen and (min-width: 480px) and (max-width: 599px){
 
     .mapa{
     height: 300px;
@@ -88,8 +71,97 @@ width: 400px;
     }
     
     .icons__container{
+        display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    
     
         width: 30px;
         font-size: 20px;
     }
     }
+
+    /*medium devices*/
+    @media only screen and (min-width: 600px) and (max-width: 767px) {
+        .mapa{
+            height: 300px;
+            width: 500px;
+             }
+            .titulo_contactanos{
+                font-size: 30px;
+            }
+            
+            .icons__container{
+                display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 100%;
+            
+            
+            
+                width: 50px;
+                font-size: 20px;
+            }
+    }
+
+     /*tablet styles*/
+
+     @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        .main__container{
+            margin: 0;
+            height: 80%;
+        }
+
+        .mapa{
+            height: 300px;
+            width: 600px;
+             }
+            .titulo_contactanos{
+                font-size: 30px;
+            }
+            
+            .icons__container{
+                display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 70%;
+            
+            
+            
+                width: 30px;
+                font-size: 20px;
+            }
+     }
+     @media only screen and (min-width: 1025px) and (max-width: 2560px){
+        .main__container{
+            margin: 0;
+            height: 80%;
+        }
+
+        .mapa{
+            height: 90%;
+            width: 70%;
+             }
+            .titulo_contactanos{
+                font-size: 40px;
+                margin-left: 7%;
+            }
+            
+            .icons__container{
+                display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 70%;
+            
+            
+            
+                width: 30px;
+                font-size: 20px;
+            }
+
+     }
+
+     
+
+      
