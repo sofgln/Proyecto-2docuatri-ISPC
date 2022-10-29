@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    width: 100vw;
+
+    font-family: 'Inter', sans-serif;
+
+    overflow-x: hidden;
+}
+
+
+/* text and list reset*/
+h1, h2, h3, h4, h5, h6, p, span, a, label, li {
+    font-size: 1em;
+    font-weight: 300;
+    color: #F1F4F9;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* form reset */
+input, textarea {
+    background-color: transparent;
+
+    border: none;
+
+    outline: none;
+}
