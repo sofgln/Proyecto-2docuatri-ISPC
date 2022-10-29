@@ -43,9 +43,9 @@ form.form {
     padding: 1.4rem 2rem;
 
     font-size: 1.6rem;
-    color: #f1f4f974;
+    color: rgba(255, 255, 255, .85);
 
-    border-bottom: 1px solid #f1f4f974;
+    border-bottom: 1px solid rgba(255, 255, 255, .65);
 }
 
 .inputs_input textarea {
@@ -72,13 +72,16 @@ form.form {
 
 
 .inputs_input input:focus, .input_tel input:focus, .inputs_input textarea:focus {
-    color: #f1f4f9d7;
+    color: rgba(255, 255, 255, .95);
 
-    border-bottom: 1px solid #f1f4f9df;
+    border-bottom: 1px solid rgba(255, 255, 255, .95);
 }
 
+.inputs_input input::placeholder, .input_tel input::placeholder, .inputs_input textarea::placeholder {
+    color: rgba(255, 255, 255, .65);
+}
 .inputs_input input:focus::placeholder, .input_tel input:focus::placeholder, .inputs_input textarea:focus::placeholder {
-    color: #f1f4f9;
+    color: rgba(255, 255, 255, .85);
 }
 
 
@@ -91,7 +94,7 @@ input[type="submit"] {
 
     font-size: 1.6rem;
     font-weight: 300;
-    color: #f1f4f9;
+    color: rgba(255, 255, 255, .85);
 
     background-color: var(--secondary);
 

@@ -30,15 +30,15 @@ h2.paises_titulo {
 }
 
 .paises_cards .card:nth-child(1) {
-    background-image: linear-gradient(to top, rgba(20, 20, 20, .75), rgba(20, 20, 20, .65), rgba(20, 20, 20, .95)) ,url('../images/card-nueva-zelanda.jpg');
+    background-image: linear-gradient(to top, rgba(20, 20, 20, .90), rgba(20, 20, 20, .55), rgba(20, 20, 20, .75)) ,url('../images/card-nueva-zelanda.jpg');
 }
 
 .paises_cards .card:nth-child(2) {
-    background-image: linear-gradient(to top, rgba(20, 20, 20, .75), rgba(20, 20, 20, .65), rgba(20, 20, 20, .95)) ,url('../images/card-holanda.jpg');
+    background-image: linear-gradient(to top, rgba(20, 20, 20, .90), rgba(20, 20, 20, .55), rgba(20, 20, 20, .75)) ,url('../images/card-holanda.jpg');
 }
 
 .paises_cards .card:nth-child(3) {
-    background-image: linear-gradient(to top, rgba(20, 20, 20, .75), rgba(20, 20, 20, .65), rgba(20, 20, 20, .95)) ,url('../images/card-australia.jpg');
+    background-image: linear-gradient(to top, rgba(20, 20, 20, .90), rgba(20, 20, 20, .55), rgba(20, 20, 20, .75)) ,url('../images/card-australia.jpg');
 }
 
 
