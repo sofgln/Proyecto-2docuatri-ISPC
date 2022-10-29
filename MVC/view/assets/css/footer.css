@@ -69,7 +69,7 @@
 .p_links{
     font-size: 10px;
 }
-
+/*RESPONSIVE*/
 @media screen and (min-width: 1024px) {
     .footer_container {
         width: 100vw;
