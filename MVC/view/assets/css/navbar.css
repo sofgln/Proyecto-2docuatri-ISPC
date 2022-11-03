@@ -20,12 +20,13 @@ nav.navbar {
 }
 
 /* main menu toggle */
-.menu_button img {
+
+.menu_button #bars {
   width: 2.6rem;
   height: 2.6rem;
 
-  user-select: none;
-  cursor: pointer;
+  font-size: 2.6rem;
+  color: #fefefe;
 }
 
 input#menu_toggle,
@@ -82,7 +83,7 @@ input#list_toggle {
   background-color: rgba(23, 23, 23, 0.4);
 }
 
-.list_link img {
+.list_link i.bi {
   width: 1.2rem;
 
   margin-bottom: -0.2rem;
@@ -109,7 +110,7 @@ input#list_toggle {
 }
 
 @media screen and (min-width: 1024px) {
-  .menu_button img {
+  .menu_button i.bi {
     display: none;
   }
 

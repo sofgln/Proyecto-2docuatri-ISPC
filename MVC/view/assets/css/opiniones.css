@@ -103,8 +103,9 @@
 }
 
 
-.header_rate img {
-  width: 2.8rem
+.header_rate i.bi {
+  font-size: 2.8rem;
+  color: #DCDC28;
 }
 
 

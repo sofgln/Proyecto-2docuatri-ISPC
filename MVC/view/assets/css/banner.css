@@ -37,7 +37,7 @@
     user-select: none;
 }
 
-.banner .banner-cta img {
+.banner .banner-cta i.bi {
     width: 1.2rem;
 
     margin-bottom: -.2rem;
