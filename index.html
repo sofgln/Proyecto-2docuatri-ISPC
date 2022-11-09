@@ -279,7 +279,7 @@
         </div>
     </section>
 
-    <form class="form" action="#" method="post">
+    <form class="form">
       <div class="form_inputs">
         <div class="inputs_input">
           <input
@@ -289,6 +289,10 @@
             id="name"
             placeholder="Germán Ramirez"
             autocomplete="off"
+            title="Solo puedes usar letras minúsculas y mayúsculas para escribir tu nombre"
+            pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+            maxlength="25"
+            required
           />
         </div>
 
@@ -300,6 +304,10 @@
             id="email"
             placeholder="Email (opcional)"
             autocomplete="off"
+            title="Debes escribir un mail válido"
+            pattern="^([a-zA-Z0-9_-.]+)@([a-zA-Z0-9_-.]+).([a-zA-Z]2,5)$"
+            maxlength="50"
+            required
           />
         </div>
 
@@ -312,6 +320,10 @@
               id="cod_area"
               placeholder="11"
               autocomplete="off"
+              title="Solo puedes usar números para escribir tu código de área"
+              pattern="^[0-9]{7}]$"
+              maxlength="5"
+              required
             />
             <input
               class="form_input"
@@ -320,6 +332,10 @@
               id="tel"
               placeholder="456-4335"
               autocomplete="off"
+              title="Solo puedes usar números para escribir tu teléfono, sin el código de área"
+              pattern="^[0-9]{7}]$"
+              maxlength="10"
+              required
             />
           </div>
         </div>
@@ -333,6 +349,9 @@
             rows="10"
             placeholder="Mensaje"
             autocomplete="off"
+            title="Debes escribir tu consulta para poder asesorarte mejor"
+            maxlength="255"
+            required
           ></textarea>
         </div>
       </div>
