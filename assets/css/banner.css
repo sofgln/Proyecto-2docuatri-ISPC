@@ -11,6 +11,8 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+
+    overflow-x: hidden;
 }
 
 .banner .banner-text {
