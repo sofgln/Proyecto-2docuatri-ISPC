@@ -106,3 +106,15 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #b35928;
 }
+
+#liveAlertPlaceholder {
+    width: 250px;
+
+    font-size: 1.4em;
+
+    position: fixed;
+    top: 50px;
+    right: 24px;
+    left: auto;
+    bottom: auto;
+}
